@@ -91,7 +91,7 @@
     <div class="dropdown">
         <button onclick="toggleDropdown()" class="dropbtn">Click me</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="page1">Sample Blockchain</a>
+            <a href="page1.html">Sample Blockchain</a>
             <a href="#">Option 2</a>
             <a href="#">Option 3</a>
         </div>
