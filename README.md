@@ -1,27 +1,192 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Lux Aurum</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Lux Aurum</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="content">
-        <h2>Welcome to Lux Aurum</h2>
-        <p>This is the Home Page content.</p>
-        <button onclick="goToAbout()">Go to About Page</button>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    font-family: var(--sans);
+    --env: "production";
+    --grid-column-bg: rgba(127, 255, 255, .25);
+    --breakpoint: "md";
+    --container-width: unset;
+    --inner-gutter: 16px;
+    --outer-gutter: 16px;
+    --grid-columns: 8;
+    --spacing-spacing-1: .25rem;
+    --spacing-spacing-2: .5rem;
+    --spacing-spacing-3: .5rem;
+    --spacing-spacing-4: 1rem;
+    --spacing-spacing-5: 2.25rem;
+    --spacing-spacing-6: 3rem;
+    --spacing-spacing-7: 5.25rem;
+    --spacing-spacing-8: 7rem;
+    --spacing-spacing-9: 10rem;
+    --spacing-spacing-10: 12.5rem;
+    --spacing-spacing-11: 12.5rem;
+    --sans: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    --circle: "Soehne Circle", sans-serif;
+    --serif: "Signifier", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --mono: "Soehne Mono Buch", Courier, monospace;
+    --gray-000: #FFFFFF;
+    --gray-050: #F2F2F2;
+    --gray-100: #FAFAFA;
+    --gray-200: #F5F5F5;
+    --gray-300: #EDEDED;
+    --gray-400: #E5E5E5;
+    --gray-500: #CDCDCD;
+    --gray-600: #A8A8A8;
+    --gray-700: #747474;
+    --gray-800: #393939;
+    --gray-900: #000000;
+    --red-050: #FFF7F6;
+    --red-100: #FFEDEB;
+    --red-200: #FFE0DB;
+    --red-300: #FFD3C9;
+    --red-400: #FFB7A4;
+    --red-500: #FF9574;
+    --red-600: #FF6E3C;
+    --red-700: #FF4500;
+    --red-800: #AA2E00;
+    --red-900: #541600;
+    --green-050: #F4FFF4;
+    --green-100: #E9FFE8;
+    --green-200: #D9FFD8;
+    --green-300: #C9FFC7;
+    --green-400: #A6FFA3;
+    --green-500: #7CF178;
+    --green-600: #51DA4C;
+    --green-700: #3FA93B;
+    --green-800: #2D712A;
+    --green-900: #193718;
+    --blue-050: #F4FBFF;
+    --blue-100: #E5F1FF;
+    --blue-200: #CBDCFF;
+    --blue-300: #AFC1FF;
+    --blue-400: #7989FF;
+    --blue-500: #3C46FF;
+    --blue-600: #0000FF;
+    --blue-700: #0404AC;
+    --blue-800: #020267;
+    --blue-900: #00002E;
+    --cyan-050: #F0FFFF;
+    --cyan-100: #E0FFFF;
+    --cyan-200: #CAFFFF;
+    --cyan-300: #B3FFFF;
+    --cyan-400: #82FFFF;
+    --cyan-500: #42FFFF;
+    --cyan-600: #00FFFF;
+    --cyan-700: #00E7E7;
+    --cyan-800: #00B3B3;
+    --cyan-900: #005454;
+    --yellow-050: #FFFFDB;
+    --yellow-100: #FFFFB6;
+    --yellow-200: #FFFF8F;
+    --yellow-300: #FFFF66;
+    --yellow-400: #FFF639;
+    --yellow-500: #F5E60D;
+    --yellow-600: #CFC52C;
+    --yellow-700: #A19A3A;
+    --yellow-800: #6C6837;
+    --yellow-900: #343322;
+    --magenta-050: #FFF9FF;
+    --magenta-100: #FFF2FF;
+    --magenta-200: #FFD7FF;
+    --magenta-300: #FFC1FF;
+    --magenta-400: #FF8BFF;
+    --magenta-500: #FF45FF;
+    --magenta-600: #FF00FF;
+    --magenta-700: #C500C5;
+    --magenta-800: #830083;
+    --magenta-900: #400040;
+    --orange-050: #FFFCF5;
+    --orange-100: #FFF9EA;
+    --orange-200: #FFF1D6;
+    --orange-300: #FFE8C1;
+    --orange-400: #FFC98A;
+    --orange-500: #FFA045;
+    --orange-600: #FE7600;
+    --orange-700: #C45600;
+    --orange-800: #833600;
+    --orange-900: #401900;
+    --violet-050: #FFF9FF;
+    --violet-100: #FFF2FF;
+    --violet-200: #FEE6FF;
+    --violet-300: #FCDAFF;
+    --violet-400: #EBBBFF;
+    --violet-500: #D292FF;
+    --violet-600: #B161FD;
+    --violet-700: #8A2BE2;
+    --violet-800: #571397;
+    --violet-900: #28044A;
+    --brown-050: #F7ECE6;
+    --brown-100: #F0DACF;
+    --brown-200: #E8C7B6;
+    --brown-300: #E1B59F;
+    --brown-400: #CB9379;
+    --brown-500: #B67252;
+    --brown-600: #A0522D;
+    --brown-700: #793A1C;
+    --brown-800: #51230D;
+    --brown-900: #2A1003;
+    --text-primary: var(--gray-900);
+    --text-primary-rgb: 0,0,0;
+    --text-inverse: var(--background-primary);
+    --text-secondary: var(--gray-700);
+    --text-interactive-primary: var(--gray-900);
+    --border-primary: var(--gray-900);
+    --border-secondary: rgba(0,0,0,.2);
+    --border-inverse: var(--background-primary);
+    --background-primary: var(--gray-000);
+    --background-inverse: var(--text-primary);
+    --background-success: var(--green-200);
+    --background-interactive-primary-hover: var(--gray-400);
+    --transparent: transparent;
+    --vh: 6.0600000000000005px;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    margin: 0;
+    line-height: inherit;
+    counter-reset: katexEqnNo mmlEqnNo;
